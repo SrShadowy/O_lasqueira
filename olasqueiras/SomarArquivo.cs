@@ -32,27 +32,19 @@ namespace olasqueiras
                 }
 
             }
-
             label2.Text = r.ToString();
-
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
             var x = new OpenFileDialog();
-            DialogResult reulst = x.ShowDialog();
-            if (reulst == DialogResult.OK)
+            DialogResult result = x.ShowDialog();
+            if (result == DialogResult.OK)
             {
                 textBox1.Text = x.FileName;
                 string[] readText = System.IO.File.ReadAllLines(x.FileName);
                 for (int i = 0; i < readText.Length; i++)
-                {
                     richTextBox1.AppendText(readText[i] + Environment.NewLine);
-
-                }
-                
-
-
             }
         }
     }

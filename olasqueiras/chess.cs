@@ -20,17 +20,6 @@ namespace olasqueiras
 
         private void chess_Load(object sender, EventArgs e)
         {
-            richTextBox1.AppendText("     01 02 03 04 05 06 07 08" + Environment.NewLine);
-            richTextBox1.AppendText("     -----------------------" + Environment.NewLine);
-            richTextBox1.AppendText(" A | 01 02 03 04 05 06 07 08" + Environment.NewLine);
-            richTextBox1.AppendText(" B | 09 10 11 12 13 14 15 16" + Environment.NewLine);
-            richTextBox1.AppendText(" C | 17 18 19 20 21 22 23 24" + Environment.NewLine);
-            richTextBox1.AppendText(" D | 25 26 27 28 29 30 31 32" + Environment.NewLine);
-            richTextBox1.AppendText(" E | 33 34 35 36 37 38 39 40" + Environment.NewLine);
-            richTextBox1.AppendText(" F | 41 42 43 44 45 46 47 48" + Environment.NewLine);
-            richTextBox1.AppendText(" G | 49 50 51 52 53 54 55 56" + Environment.NewLine);
-            richTextBox1.AppendText(" H | 57 58 59 60 61 62 63 64" + Environment.NewLine);
-
 
         }
         Char[] nums = { '1', '2', '3', '4', '5', '6', '7', '8' };
@@ -65,6 +54,11 @@ namespace olasqueiras
                 letra = 0;
             }
             
+        }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

@@ -20,7 +20,6 @@ namespace olasqueiras
         public string ceziar (string x)
         {
             int[] chave = { 0, 2, 3, 1 };
-                            //0 1 2 3
 
             char[] ceza = x.ToCharArray();
             int c = 0;
@@ -48,7 +47,6 @@ namespace olasqueiras
         public string desceziar(string x)
         {
             int[] chave = { 0, 2, 3, 1 };
-            //0 1 2 3
 
             char[] ceza = x.ToCharArray();
             int c = 0;
